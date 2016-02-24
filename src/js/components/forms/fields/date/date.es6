@@ -179,7 +179,8 @@ export default React.createClass({
   },
 
   momentDate(date) {
-    if (!!date) {
+    // TODO: date is normally !!date -- this is an EMERGENCY FIX due to compiling issues. Revert after 2/24
+    if (date) {
       switch (date.constructor.name) {
         case "Date":
         case "Number":
