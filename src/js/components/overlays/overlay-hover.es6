@@ -7,7 +7,7 @@ export default class OverlayHover extends Component {
   }
 
   classes() {
-    let classes = ['relative'];
+    let classes = ['relative'].concat(this.props.extraClasses);
     return classes.join(' ');
   }
 
@@ -67,5 +67,6 @@ OverlayHover.PropTypes = {
   content: PropTypes.node.isRequired,
   onHover: PropTypes.func,
   onClose: PropTypes.func,
-  onOpen: PropTypes.func
+  onOpen: PropTypes.func,
+  extraClasses: PropTypes.string
 }

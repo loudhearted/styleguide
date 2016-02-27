@@ -10,7 +10,8 @@ export default React.createClass({
     content: Type.node.isRequired,
     onClick: Type.func,
     onClose: Type.func,
-    onOpen: Type.func
+    onOpen: Type.func,
+    extraClasses: Type.string
   },
 
   getDefaultProps() {
@@ -26,7 +27,7 @@ export default React.createClass({
   },
 
   classes() {
-    let classes = ['relative'];
+    let classes = ['relative'].concat(this.props.extraClasses);
     return classes.join(' ');
   },
 
