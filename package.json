@@ -1,5 +1,5 @@
 {
-  "name": "namely-ui",
+  "name": "@namely-ui/effectivedate",
   "version": "0.2.3",
   "description": "Namely UI: A SCSS and React component library for internal use at Namely",
   "private": true,
