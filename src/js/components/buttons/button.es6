@@ -58,6 +58,6 @@ export default React.createClass({
   },
 
   render() {
-    return <button {...this.props} className={ this.classes() } disabled={ this.props.disabled }>Effective Date Change 1 { this.props.label }</button>;
+    return <button {...this.props} className={ this.classes() } disabled={ this.props.disabled }>Effective Date Change 2 { this.props.label }</button>;
   }
 });
